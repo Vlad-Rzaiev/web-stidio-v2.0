@@ -1,1 +1,1 @@
-# web-stidio-v2.0
+# web-studio-v2.0
