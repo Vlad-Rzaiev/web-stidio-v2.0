@@ -1080,10 +1080,6 @@ input[type='checkbox']:checked + label .new-checkbox {
   .checkbox-label-text-space {
     word-spacing: 10px;
   }
-
-  .checkbox-label-link {
-    margin-left: 4px;
-  }
 }
 
 /* DESKTOP STYLES */
@@ -1341,9 +1337,5 @@ input[type='checkbox']:checked + label .new-checkbox {
 
   .checkbox-label-text-space {
     word-spacing: 10px;
-  }
-
-  .checkbox-label-link {
-    margin-left: 4px;
   }
 }
