@@ -790,7 +790,7 @@ textarea {
   align-items: center;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   left: 0px;
   width: 16px;
   height: 16px;
@@ -815,8 +815,7 @@ input[type='checkbox']:checked + label .new-checkbox {
   width: 256px;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 14px;
+  line-height: 0.4;
   letter-spacing: 0.48px;
   color: var(--LIGHT-SLATE);
   padding-left: 24px;
@@ -1075,10 +1074,13 @@ input[type='checkbox']:checked + label .new-checkbox {
     width: 360px;
     flex-direction: row;
     align-items: center;
+    padding-left: 0;
   }
 
-  .checkbox-label-text-space {
-    word-spacing: 10px;
+  .new-checkbox {
+    position: static;
+    transform: translate(0);
+    margin-right: 8px;
   }
 }
 
@@ -1333,9 +1335,12 @@ input[type='checkbox']:checked + label .new-checkbox {
     width: 360px;
     flex-direction: row;
     align-items: center;
+    padding-left: 0;
   }
 
-  .checkbox-label-text-space {
-    word-spacing: 10px;
+  .new-checkbox {
+    position: static;
+    transform: translate(0);
+    margin-right: 8px;
   }
 }

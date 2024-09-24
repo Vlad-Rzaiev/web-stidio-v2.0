@@ -59,7 +59,7 @@
           </ul>
         </address>
 
-        <button type="button" class="phone-heder-nav-menu-btn">
+        <button type="button" class="phone-heder-nav-menu-btn" data-menu-open>
           <svg width="24" height="24">
             <use href="./img/icons.svg#icon-phone-menu"></use>
           </svg>
@@ -72,7 +72,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -539,10 +541,10 @@
     </footer>
 
     <!--PHONE-MENU-->
-    <div class="phone-menu">
+    <div class="phone-menu" data-menu>
       <div class="phone-menu-container">
         <div class="btn-list-container">
-          <button type="button" class="phone-menu-close-btn">
+          <button type="button" class="phone-menu-close-btn" data-menu-close>
             <svg width="8" height="8">
               <use href="./img/icons.svg#icon-close"></use>
             </svg>
@@ -616,9 +618,9 @@
     </div>
 
     <!--MODAL-FORM-->
-    <div class="modal-form-overlay">
+    <div class="modal-form-overlay" data-modal>
       <div class="modal-form">
-        <button type="button" class="modal-form-close-btn">
+        <button type="button" class="modal-form-close-btn" data-modal-close>
           <svg width="8" height="8">
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
@@ -688,5 +690,11 @@
         </form>
       </div>
     </div>
+
+    <!-- MODAL SCRIPT -->
+    <script src="./js/modal.js" type="module"></script>
+
+    <!-- PHONE MENU SCRIPT -->
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
