@@ -1,4 +1,4 @@
-/* COMMON */
+/*==================== COMMON ====================*/
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -6,7 +6,7 @@ body {
 }
 
 input {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
 }
 
 a {
@@ -41,7 +41,16 @@ img {
   margin: 0 auto;
 }
 
-/* HEADER */
+:root {
+  --LIGHT-SLATE: #8e8f99;
+  --NAVY-BLUE: #2e2f42;
+  --NAVY-BLUE-modal: rgba(46, 47, 66, 0.4);
+  --IRIS: #4d5ae5;
+  --OCEAN: #404bbf;
+  --CLOUD: #f4f4fd;
+  --WHITE: #fff;
+}
+/*==================== HEADER ====================*/
 .header-nav-list,
 .header-address {
   display: none;
@@ -87,7 +96,7 @@ img {
   cursor: pointer;
 }
 
-/* HERO SECTION */
+/*==================== HERO SECTION ====================*/
 .hero-section .container {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -97,7 +106,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../img/background-section-phone.jpg);
+    url(../img/bg/background-section-phone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -110,7 +119,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/background-section-phone@2x.jpg);
+      url(../img/bg/background-section-phone@2x.jpg);
   }
 }
 
@@ -148,7 +157,7 @@ img {
   background-color: #404bbf;
 }
 
-/* BENEFITS SECTION */
+/*==================== BENEFITS SECTION ====================*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -195,7 +204,7 @@ img {
   gap: 72px;
 }
 
-/* OUR TEAM SECTION */
+/*==================== OUR TEAM SECTION ====================*/
 .our-team {
   background-color: #f4f4fd;
 }
@@ -269,7 +278,7 @@ img {
   background-color: #404bbf;
 }
 
-/* PORTFOLIO SECTION */
+/*==================== PORTFOLIO SECTION ====================*/
 .portfolio-list {
   display: flex;
   flex-direction: column;
@@ -327,7 +336,7 @@ img {
   transform: translateY(0);
 }
 
-/* FOOTER */
+/*==================== FOOTER ====================*/
 .footer {
   background-color: #2e2f42;
 }
@@ -472,7 +481,7 @@ img {
   background-color: #404bbf;
 }
 
-/* PHONE MENU */
+/*==================== PHONE MENU ====================*/
 .phone-menu {
   position: fixed;
   top: 0;
@@ -620,17 +629,7 @@ img {
   background-color: #31d0aa;
 }
 
-/* MODAL FORM */
-:root {
-  --LIGHT-SLATE: #8e8f99;
-  --NAVY-BLUE: #2e2f42;
-  --NAVY-BLUE-modal: rgba(46, 47, 66, 0.4);
-  --IRIS: #4d5ae5;
-  --OCEAN: #404bbf;
-  --CLOUD: #f4f4fd;
-  --WHITE: #fff;
-}
-
+/*==================== MODAL FORM ====================*/
 .modal-form-overlay {
   position: fixed;
   top: 0;
@@ -862,7 +861,7 @@ input[type='checkbox']:checked + label .new-checkbox {
   background-color: var(--OCEAN);
 }
 
-/* TABLET STYLES */
+/*==================== TABLET STYLES ====================*/
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     max-width: 768px;
@@ -955,7 +954,7 @@ input[type='checkbox']:checked + label .new-checkbox {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/background-section-tablet.jpg);
+      url(../img/bg/background-section-tablet.jpg);
   }
 
   @media screen and (min-resolution: 192dpi) {
@@ -965,7 +964,7 @@ input[type='checkbox']:checked + label .new-checkbox {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../img/background-section-tablet@2x.jpg);
+        url(../img/bg/background-section-tablet@2x.jpg);
     }
   }
 
@@ -1057,7 +1056,7 @@ input[type='checkbox']:checked + label .new-checkbox {
     display: none;
   }
 
-  /* TABLET MODAL FORM */
+  /*==================== TABLET MODAL FORM ====================*/
   .modal-form {
     width: 408px;
     min-height: 584px;
@@ -1084,7 +1083,7 @@ input[type='checkbox']:checked + label .new-checkbox {
   }
 }
 
-/* DESKTOP STYLES */
+/*==================== DESKTOP STYLES ====================*/
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -1180,7 +1179,7 @@ input[type='checkbox']:checked + label .new-checkbox {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/background-section-desktop.jpg);
+      url(../img/bg/background-section-desktop.jpg);
   }
 
   @media screen and (min-resolution: 192dpi) {
@@ -1190,7 +1189,7 @@ input[type='checkbox']:checked + label .new-checkbox {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../img/background-section-desktop@2x.jpg);
+        url(../img/bg/background-section-desktop@2x.jpg);
     }
   }
 
@@ -1318,7 +1317,7 @@ input[type='checkbox']:checked + label .new-checkbox {
     display: none;
   }
 
-  /* DESKTOP MODAL FORM */
+  /*==================== DESKTOP MODAL FORM ====================*/
   .modal-form {
     width: 408px;
     min-height: 584px;
